@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+	   <title>Cloud Labs - Teste de Cluster</title>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	   <link rel="icon" type="image/gif" href="cropped-cloudlabs-favicon-32x32.png" />
+	</h:head>
+	<h:body>
+		<div style="text-align: -webkit-center;">
+			<img src="cloudlabs-logo-100.png" />
+			<h1>Teste de Cluster</h1>
+	
+			<p><b>Nome do Host</b>: #{infra.nodeName}</p>
+			<p><b>Contador</b>: #{counter.counterValue}</p>
+			<h:form>
+			  <h:commandButton value="Refresh" action="index.html" />
+			</h:form>
+		</div>
+	</h:body>
+</html>
